@@ -1,17 +1,20 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
- * main - assign a random number to the variable n each time it is  executed
- * Return: to 0
+ * main - main block
+ * Description: Get a random number and check its last digit, compare it with 5
+ * Return: 0
  */
 int main(void)
 {
-	int ch;
+	char c = 'a';
 
-	for (ch = 97; ch <= 122; ch++)
-
+	while (c <= 'z')
 	{
-		putchar(ch);
+		putchar(c);
+		c++;
 	}
-	putchar(10); /* this is for new line */
+
+	putchar('\n');
 	return (0);
 }

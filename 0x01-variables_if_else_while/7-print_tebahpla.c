@@ -1,18 +1,18 @@
 #include <stdio.h>
+
 /**
- *main -> assign a random number to the variable n each time it is executed
- *Return: to 0
- */
+* main - Print the alphabet in lowercase letters in reverse
+*
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
-	char ch;
+	char letter;
 
-	for (ch = 'z'; ch >= 'a'; ch--)
-	{
-		putchar(ch);
-	}
+	for (letter = 'z'; letter >= 'a'; letter--)
+	putchar(letter);
 
-	putchar(10); /* this is an ascii code for new line*/
+	putchar('\n');
 
 	return (0);
 }

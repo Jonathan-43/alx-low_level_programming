@@ -1,21 +1,20 @@
 #include <stdio.h>
+
 /**
- *main -> assign a random number to the variable n each time it is executed
- *Return: to  0
- */
+* main - Print the alphabet in lowercase letters, except for e and q
+*
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
-	char ch;
+		char letter;
 
-	for (ch = 'a'; ch <= 'z'; ch++)
-	{
-		if (ch != 'q' && ch != 'e')
+		for (letter = 'a'; letter <= 'z'; letter++)
 		{
-			putchar(ch);
+		if (letter != 'e' && letter != 'q')
+		putchar(letter);
 		}
-	}
-
-	putchar(10); /* this is an ascii code for new line*/
+		putchar('\n');
 
 	return (0);
 }

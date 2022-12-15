@@ -1,19 +1,18 @@
 #include <stdio.h>
+
 /**
- *main -> assign a random number to the variable n each time it is executed
- *Return: to 0
- */
+* main - Print all single digit numbers using only putchar
+*
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
-	int ch;
+	int digit;
 
-	for (ch = 48; ch <= 57; ch++)
-	{
-		putchar(ch);
-	}
+	for (digit = 0; digit < 10; digit++)
+	putchar(digit + '0');
 
-	putchar(10); /* this is an ascii code for new line*/
+	putchar('\n');
 
 	return (0);
 }
-

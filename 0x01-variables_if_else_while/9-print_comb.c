@@ -1,25 +1,25 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
- *main -> assign a random number to the variable n each time it is executed
- *Return: to 0
+ * main - main block
+ * Description: prints all single digit numbers of base 10
+ * starting from 0, followed by a new line.
+ * Return: 0
  */
 int main(void)
 {
-	int ch;
+	int c = 0;
 
-	for (ch = 48; ch <= 57; ch++)
+	while (c < 10)
 	{
-		putchar(ch);
-
-		if (ch != 57)
+		putchar(48 + c);
+		if (c != 9)
 		{
-			putchar(44);
-
-			putchar(32);
+			putchar(',');
+			putchar(' ');
 		}
+		c++;
 	}
-
-	putchar(10); /* this is an ascii code for new line*/
-
+	putchar('\n');
 	return (0);
 }

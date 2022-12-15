@@ -1,22 +1,28 @@
 #include <stdio.h>
 /**
- *main - assign a random number to the variable n each time it is executed
- *Return: to 0
+ * main - main block
+ * Description:  prints the alphabet in lowercase,
+ * and then in uppercase, followed by a new line.
+ * Return: 0
  */
 int main(void)
 {
-	int ch;
+	char c = 'a';
 
-	for (ch = 97; ch <= 122; ch++)
+	while (c <= 'z')
 	{
-		putchar(ch);
+		putchar(c);
+		c++;
 	}
 
-	for (ch = 65; ch <= 90; ch++)
+	c = 'A';
+
+	while (c <= 'Z')
 	{
-		putchar(ch);
+		putchar(c);
+		c++;
 	}
 
-	putchar(10); /* this is for new line*/
+	putchar('\n');
 	return (0);
 }

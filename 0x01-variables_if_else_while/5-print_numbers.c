@@ -1,17 +1,17 @@
 #include <stdio.h>
+
 /**
- *main -> assign a random number to the variable n each time it is executed
- *Return: to 0
- */
+* main - Print all single digit numbers
+*
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
-	int n;
+	int digit;
 
-	for (n = 0; n < 10; n++)
-	{
-		printf("%d", n);
-	}
-	printf("\n");
+	for (digit = 0; digit < 10; digit++)
+	printf("%i", digit);
+	putchar('\n');
 
 	return (0);
 }
